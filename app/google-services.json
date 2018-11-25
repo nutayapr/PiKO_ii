@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "714242644195",
+    "firebase_url": "https://piko-a767c.firebaseio.com",
+    "project_id": "piko-a767c",
+    "storage_bucket": "piko-a767c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714242644195:android:3b6df4dcf886ae37",
+        "android_client_info": {
+          "package_name": "com.cpe327.piko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714242644195-shu4nbhf42bkem7lia0q4j46q4gov0ka.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cpe327.piko",
+            "certificate_hash": "c5717df9683972aacb74b2a6f4289bbb9d2b9af2"
+          }
+        },
+        {
+          "client_id": "714242644195-9saqmd319b506t78vbmti9vnsdcbacqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNnMzgJk8FvNpya4YWe79NAUwJ_d-nrsY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714242644195-9saqmd319b506t78vbmti9vnsdcbacqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
