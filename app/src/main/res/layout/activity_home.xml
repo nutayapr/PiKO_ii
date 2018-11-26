@@ -1,22 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityHome">
+    android:background="#FFFCEF"
+    android:orientation="vertical"
+    android:weightSum="12"
+    tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btlogout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+    <TextView
+    android:id="@+id/tvname"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:textColor="#FF7F5B"
+    android:textSize="30sp"
+    android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#D2EBCD"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_weight="2"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Tel"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="E-mail"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="DateOfBirth"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Facebook"-->
+                <!--android:textSize="15sp"-->
+                <!--android:textStyle="bold" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvtel"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+                <!--android:text="0865759098"-->
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvemail"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <!--android:text="smilemint.lollipop@gmail.com"-->
+            android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvfb"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center" />-->
+            <!--android:text="Minto Minano"-->
+            android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btreport"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#6ACB9A"
+            android:gravity="center"
+            android:text="R E P O R T"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btlogout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#6ACB9A"
+            android:gravity="center"
+            android:text="L O G O U T"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="top">
+
+        <Button
+            android:id="@+id/btnote"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="left|top"
+            android:layout_margin="30dp"
+            android:background="#FF7F5B"
+            android:text="n o t e"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btplanner"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="right|top"
+            android:layout_margin="30dp"
+            android:background="#FF7F5B"
+            android:text="p l a n n e r"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btschedule"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="left|bottom"
+            android:layout_margin="30dp"
+            android:background="#FF7F5B"
+            android:text="s c h e d u l e"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/bthomework"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="30dp"
+            android:background="#FF7F5B"
+            android:text="h o m e w o r k"
+            android:textColor="#ffffff" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#6ACB9A"
-        android:gravity="center"
-        android:text="L O G O U T"
-        android:textColor="#ffffff"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:background="#393939">
 
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
 </LinearLayout>
