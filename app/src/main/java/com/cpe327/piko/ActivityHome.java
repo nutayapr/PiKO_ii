@@ -22,11 +22,8 @@ import java.net.URL;
 public class ActivityHome extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
-    private Button mLogoutBtn;
-    private TextView mTextViewProfileTel;
-    private TextView mTextViewProfileEmail;
-    private TextView mTextViewProfileFB;
-    private TextView mTextViewProfileDOB;
+    private Button mLogoutBtn,mReportBtn;
+    private TextView mTextViewProfileTel,mTextViewProfileEmail,mTextViewProfileFB;
     private ImageView mImageView;
 
     @Override
@@ -50,21 +47,31 @@ public class ActivityHome extends AppCompatActivity {
             }
         });
 
+        // Report Activity (Go to Report page) //
+        mReportBtn = (Button)findViewById(R.id.btreport) ;
+        mReportBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ReportIntent = new Intent (ActivityHome.this,ActivityReport.class);
+                startActivity(ReportIntent);
+                finish();
+            }
+        });
+
 
         // Profile Display //
-        //        mTextViewProfileTel = (TextView)findViewById(R.id.tvtel);
+//        mTextViewProfileTel = (TextView)findViewById(R.id.tvtel);
         mImageView = (ImageView)findViewById(R.id.imgProfile);
         mTextViewProfileEmail = (TextView)findViewById(R.id.tvemail);
         mTextViewProfileFB = (TextView)findViewById(R.id.tvname);
 //        mTextViewProfileDOB = (TextView) findViewById(R.id.tvDOB);
 
         FirebaseUser user = mAuth.getCurrentUser();
-        //        mTextViewProfileTel.setText(user.getPhoneNumber());
+//        mTextViewProfileTel.setText(user.getPhoneNumber());
 
         new DownloadImageTask().execute(user.getPhotoUrl().toString());
         mTextViewProfileEmail.setText(user.getEmail());
         mTextViewProfileFB.setText(user.getDisplayName());
-
 
 
     }

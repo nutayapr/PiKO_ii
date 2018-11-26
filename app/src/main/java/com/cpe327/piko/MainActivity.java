@@ -110,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
                             Log.w("FACELOC", "signInWithCredential:failure", task.getException());
                             Toast.makeText(MainActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
-//                            updateUI();
                         }
                     }
                 });
