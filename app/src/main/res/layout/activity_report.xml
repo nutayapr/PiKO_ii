@@ -4,13 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fffcef"
+    android:orientation="vertical"
     tools:context=".ActivityReport">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="DETAILS :"
+        android:textColor="#ff7f5b"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"/>
+
+    <EditText
+        android:id="@+id/editbox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="testest report page"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="214dp" />
+        android:layout_weight="8"
+        android:gravity="top"
+        android:hint="Type your message to administer here."
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        android:text="S e n d"
+        android:textColor="#fffcef" />
+
+
 </LinearLayout>
