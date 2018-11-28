@@ -5,14 +5,16 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-@SuppressLint("Registered")
-public class ActivitySchedule extends Activity {
+//@SuppressLint("Registered")
+public class ActivitySchedule extends AppCompatActivity {
 //    FirebaseDatabase database;
 //    DatabaseReference ref;
 
@@ -22,10 +24,10 @@ public class ActivitySchedule extends Activity {
 //    private ArrayList<String> arrayList = new ArrayList<>();
 //    private ArrayAdapter<String> adapter;
 
-
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_schedule);
+        setContentView(R.layout.activity_report);
 
         b = findViewById(R.id.addNewSchedule);
         b.setOnClickListener(new View.OnClickListener() {
@@ -34,6 +36,8 @@ public class ActivitySchedule extends Activity {
                 startActivity(new Intent(ActivitySchedule.this, SchedulePop.class));
             }
         });
+
+//        Toast.makeText(ActivitySchedule.this,"testtest",Toast.LENGTH_LONG).show();
 
 //        database = FirebaseDatabase.getInstance();
 //        ref = database.getReference("testpiko-b5984");

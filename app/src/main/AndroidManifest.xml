@@ -39,7 +39,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ActivityHome" />
-        <activity android:name=".ActivityReport"></activity>
+        <activity android:name=".ActivityReport" />
+        <activity android:name=".testActivity"></activity>
     </application>
 
 </manifest>

@@ -58,11 +58,22 @@ public class ActivityHome extends AppCompatActivity {
             }
         });
 
-        mScheduleBtn = (Button)findViewById(R.id.btschedule) ;
+        // Schedule Activity (Go to Schedule page) //
+//        mScheduleBtn = (Button)findViewById(R.id.btschedule) ;
+//        mScheduleBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent ScheduleIntent = new Intent(ActivityHome.this,ActivitySchedule.class);
+//                startActivity(ScheduleIntent);
+//                finish();
+//            }
+//        });
+
+        mScheduleBtn = (Button)findViewById(R.id.btschedule);
         mScheduleBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ScheduleIntent = new Intent(ActivityHome.this,ActivitySchedule.class);
+                Intent ScheduleIntent = new Intent (ActivityHome.this,testActivity.class);
                 startActivity(ScheduleIntent);
                 finish();
             }
