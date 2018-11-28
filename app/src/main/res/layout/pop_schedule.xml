@@ -1,6 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#d2ebcd"
+    android:gravity="center"
+    android:padding="2dp"
+    android:orientation="vertical"
+    tools:context=".SchedulePop">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/scheTextDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Day:"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true" />
+
+
+    <Spinner
+        android:id="@+id/scheFillDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scheTextDay"
+        />
+
+    <TextView
+        android:id="@+id/scheTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scheFillDay"
+        android:text="Time:"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/scheLayTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/scheTextTime">
+
+        <EditText
+            android:id="@+id/scheFillStartTime"
+            android:layout_height="wrap_content"
+            android:hint="start"
+            android:ems="10"
+            android:inputType="time"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:id="@+id/scheTextTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/scheFillEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="end"
+            android:ems="10"
+            android:inputType="time" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scheTextActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="Activity:"
+        android:layout_below="@+id/scheLayTime"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/scheFillActivity"
+        android:layout_height="wrap_content"
+        android:hint="activity"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/scheTextActivity"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal">
+
+        <Button
+            android:id="@+id/scheBtnAdd"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:onClick="addNewSchedule"
+            android:text="ADD" />
+
+        <Button
+            android:id="@+id/scheBtnCancel"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="CANCEL" />
+    </LinearLayout>
+
+</LinearLayout>

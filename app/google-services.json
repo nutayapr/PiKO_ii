@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "714242644195-iejg09t025i5ldbojpbqoc4rd6lm88cc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cpe327.piko",
+            "certificate_hash": "e07e5b5be58a3e6755f929a29501b1b25d6a5f58"
+          }
+        },
+        {
           "client_id": "714242644195-9saqmd319b506t78vbmti9vnsdcbacqc.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -2,6 +2,14 @@
     <string name="app_name">PiKO</string>
     <string name="facebook_app_id">516693525481756</string>
     <string name="fb_login_protocol_scheme">fb516693525481756</string>
-
+    <string-array name="sche_weekday">
+        <item id="mon">Monday</item>
+        <item id="tue">Tuesday</item>
+        <item id="wed">Wednesday</item>
+        <item id="thu">Thursday</item>
+        <item id="fri">Friday</item>
+        <item id="sat">Saturday</item>
+        <item id="sun">Sunday</item>
+    </string-array>
 
 </resources>

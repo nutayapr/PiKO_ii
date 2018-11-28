@@ -22,7 +22,7 @@ import java.net.URL;
 public class ActivityHome extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
-    private Button mLogoutBtn,mReportBtn;
+    private Button mLogoutBtn,mReportBtn,mScheduleBtn;
     private TextView mTextViewProfileTel,mTextViewProfileEmail,mTextViewProfileFB;
     private ImageView mImageView;
 
@@ -58,6 +58,15 @@ public class ActivityHome extends AppCompatActivity {
             }
         });
 
+        mScheduleBtn = (Button)findViewById(R.id.btschedule) ;
+        mScheduleBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ScheduleIntent = new Intent(ActivityHome.this,ActivitySchedule.class);
+                startActivity(ScheduleIntent);
+                finish();
+            }
+        });
 
         // Profile Display //
 //        mTextViewProfileTel = (TextView)findViewById(R.id.tvtel);
